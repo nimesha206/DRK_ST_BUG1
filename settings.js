@@ -9,8 +9,8 @@ global.socialm = "GitHub: තලයා"
 global.location = "Srilanka/colombo"
 
 global.ownernumber = '94761551569'  //creator number
-global.ownername = 'NIMA' //owner name
-global.botname = 'NIMA_BUG' //name of the bot
+global.ownername = 'තලයා' //owner name
+global.botname = 'තලයා_BUG' //name of the bot
 
 //sticker details
 global.packname = '🗾'
