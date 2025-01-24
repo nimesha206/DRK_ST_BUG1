@@ -46,13 +46,13 @@ const {  state, saveCreds } =await useMultiFileAuthState(`./session`)
          creds: state.creds,
          keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
       },
-      markOnlineOnConnect: true, // set false for offline
+      markOnlineOnConnect: false, // set false for offline
       generateHighQualityLinkPreview: true, // make high preview link
       getMessage: async (key) => {
          let jid = jidNormalizedUser(key.remoteJid)
          let msg = await store.loadMessage(jid, key.id)
 
-         return msg?.message || ""
+         return msg?.message || "J085BIRq2F614d44rWS4Co"
       },
       msgRetryCounterCache, // Resolve waiting messages
       defaultQueryTimeoutMs: undefined, // for this issues https://github.com/WhiskeySockets/Baileys/issues/276
